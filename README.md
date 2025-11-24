@@ -65,7 +65,7 @@ The instructions below are for a Myth machine, but similar sequence can be run o
    ```
 2. Build the CLI:
    ```bash
-   cd kernel-cli && ./build.sh
+   cd asst5-kernel && ./build.sh
    ```
 ---
 
