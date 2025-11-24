@@ -110,7 +110,7 @@ The reference implementation (`reference.py`) uses PyTorch for optimization. The
 
 | Grid Size | Time Steps | PyTorch baseline (ms) | Naive Triton (ms) | Naive CUDA (ms) |
 |-----------|------------|------------------------|-------------------|-----------------|
-| 600       | 50         | 7207.43                | 1539.32           | 727.99          |
+| 600       | 10         | 1458 ± 3ms               | TODO           | TODO          |
 
 Your CUDA kernel should achieve significant speedups over this PyTorch baseline through custom memory access patterns, shared memory optimization, and kernel fusion. The naive CUDA and Triton implementations provide baselines for what straightforward translations achieve.
 
