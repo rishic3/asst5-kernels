@@ -54,6 +54,8 @@ cuda_module = load_inline(
     cuda_sources=cuda_source,
     functions=['custom_kernel'],
     verbose=True,  # Enable verbose to see compilation details
+    extra_ldflags=['-lcublas', '-lcublasLt'],
+    extra_cuda_cflags=['--use_fast_math'],
     # with_cuda=True,
     # build_directory=".",
 )
